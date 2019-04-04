@@ -1,16 +1,12 @@
 package lab3;
 
-import java.util.List;
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class Menu {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		String entrada = "";
-		Contato[] contatos = new Contato[101];
-		List<Integer> posicoes = new ArrayList<Integer>();
+		Agenda agenda = new Agenda();
 
 		do {
 			System.out.println("(C)adastrar Contato");
@@ -37,29 +33,27 @@ public class Menu {
 				System.out.print("Telefone: ");
 				String telefone = teclado.nextLine();
 				System.out.println("CADASTRO REALIZADO!\n");
-				
-				contatos[posicao] = new Contato(nome, sobreNome, telefone);
-				posicoes.add(posicao);
-				Collections.sort(posicoes);
+
+				agenda.cadastrarContato(posicao, nome, sobreNome, telefone);
 
 			} else if (entrada.equals("L")) {
-				System.out.println("");
-				for(int i = 0; i < posicoes.size(); i++) {
-					System.out.println(posicoes.get(i) + " - " + contatos[posicoes.get(i)].exibeNome());
-				}
-				System.out.println("");
+
+				agenda.listarContatos();
+
 			} else if (entrada.equals("E")) {
-				
+
 				System.out.print("Contato> ");
 				int posicao = Integer.parseInt(teclado.nextLine());
-				String imprimir = contatos[posicao].toString();
-				System.out.println("\n" + imprimir + "\n");
+				System.out.println(agenda.pesquisarContato(posicao));
 
 			} else if (entrada.equals("S")) {
+
 				break;
-				
+
 			} else {
+
 				System.out.println("OPÇÃO INVÁLIDA!\n");
+
 			}
 
 		} while (!entrada.equals("S"));
