@@ -38,7 +38,7 @@ public class Menu {
 
 			} else if (entrada.equals("L")) {
 
-				agenda.listarContatos();
+				System.out.println(agenda.listarContatos());
 
 			} else if (entrada.equals("E")) {
 

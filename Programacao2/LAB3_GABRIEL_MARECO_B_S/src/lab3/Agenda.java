@@ -1,5 +1,7 @@
 package lab3;
 
+import java.util.Arrays;
+
 public class Agenda {
 	Contato[] contatos;
 
@@ -7,21 +9,45 @@ public class Agenda {
 		this.contatos = new Contato[100];
 	}
 
-	public void cadastrarContato(int posicao, String nome, String sobreNome, String telefone) {
-		this.contatos[posicao - 1] = new Contato(nome, sobreNome, telefone);
+	public boolean cadastrarContato(int posicao, String nome, String sobreNome, String telefone) {
+		if(posicao >= 1 && posicao <= 100) {
+			this.contatos[posicao - 1] = new Contato(nome, sobreNome, telefone);
+			return true;
+		}else{
+			return false;
+		}
 	}
 
 	public String pesquisarContato(int posicao) {
-		return "\n" + this.contatos[posicao - 1].toString() + "\n";
+		if((this.contatos[posicao - 1] == null) || (posicao < 1 || posicao > 100)){
+			return "POSIÇÃO INVÁLIDA!\n";
+		}else {
+			return "\n" + this.contatos[posicao - 1].toString() + "\n";
+		}
 	}
 
-	public void listarContatos() {
-		System.out.println("");
+	public String listarContatos() {
+		String listaDeContatos = "\n";
 		for (int i = 0; i < contatos.length; i++) {
 			if (this.contatos[i] != null) {
-				System.out.println(i + " - " + this.contatos[i].exibeNome());
+
+				listaDeContatos += (i+1) + " - " + this.contatos[i].exibeNome() + "\n";
 			}
 		}
-		System.out.println("");
+		return listaDeContatos;
+
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Agenda agenda = (Agenda) o;
+		return Arrays.equals(contatos, agenda.contatos);
+	}
+
+	@Override
+	public int hashCode() {
+		return Arrays.hashCode(contatos);
 	}
 }

@@ -14,7 +14,8 @@ public class Contato {
 	public String exibeNome() {
 		return this.nome + " " + this.sobreNome;
 	}
-	
+
+	@Override
 	public String toString() {
 		return this.nome + " " + this.sobreNome + " " + "-" + " " + this.telefone;
 	}
