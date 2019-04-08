@@ -31,6 +31,18 @@ public class Contato {
         this.telefone = telefone;
     }
 
+    public String getNome() {
+        return this.nome;
+    }
+
+    public String getSobreNome() {
+        return this.sobreNome;
+    }
+
+    public String getTelefone() {
+        return this.telefone;
+    }
+
     public String exibeNome() {
         return this.nome + " " + this.sobreNome;
     }
