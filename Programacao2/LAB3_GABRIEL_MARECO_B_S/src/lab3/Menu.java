@@ -3,7 +3,8 @@ package lab3;
 import java.util.Scanner;
 
 /**
- * Classe principal, onde vai se chamar todas as outras classes, aqui mostra o menu do sistema.
+ * Classe principal, onde vai se chamar todas as outras classes, aqui mostra o menu do sistema da agenda.
+ * Aqui está a Main  do programa.
  *
  * @author Gabriel Mareco Batista de Souto
  */
@@ -29,17 +30,32 @@ public class Menu {
 
     }
 
+    /**
+     * Lista os contatos de agenda, criado para deixar mais organizado o codigo.
+     *
+     * @param agenda a genda a qual vai ser listada.
+     */
     public static void listar(Agenda agenda) {
         System.out.println(agenda.listarContatos());
     }
 
+    /**
+     * Exibi um contato da posicao desejada pelo usuario
+     *
+     * @param teclado onde o usuario vai entrar a posicao
+     * @param agenda agenda em que está os contatos.
+     */
     public static void exibir(Scanner teclado, Agenda agenda) {
         System.out.print("Contato> ");
         int posicao = Integer.parseInt(teclado.nextLine());
         System.out.println(agenda.pesquisarContato(posicao));
     }
 
-
+    /**
+     * Main principal...
+     *
+     * @param args é uma forma do “mundo externo” comunicar-se com sua aplicacao atraves de argumentos.
+     */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         String entrada;
