@@ -1,3 +1,69 @@
-.App {
-  text-align: center;
+#area
+{
+  position:relative;
+  left:37%;
+  top:29%;
+  width:320px;
+  height:270px;
+}
+#area #formulario{
+  position:absolute;
+  display:block;   
+}
+fieldset{
+  width:300px;
+  height:500px;
+}
+legend
+{
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#formulario input.campo_nome
+{
+  position: absolute;
+  left:120px;
+  top:23px;
+  width:200px;
+}
+#formulario input.campo_matricula
+{ 
+  position:absolute;
+  left:120px;
+  margin-top:3px;
+  width:200px;
+}
+#formulario input.campo_data
+{ 
+  position:absolute;
+  left:120px;
+  margin-top:7px;
+  width:150px;
+}
+#formulario input.campo_presente_sim
+{ 
+  position:absolute;
+  left:100px;
+  margin-top:20px;
+  width:150px;
+}
+#formulario input.campo_presente_nao
+{ 
+  position:absolute;
+  left:150px;
+  margin-top:20px;
+  width:150px;
+}
+#formulario textarea.campo_comentario
+{
+  position: absolute;
+  margin-top: 20px;
+}
+#formulario button.btn_submit
+{
+  border-style:dashed;
+  position:absolute;
+  bottom: 0.5em;
+  right:10px;
 }
