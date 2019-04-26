@@ -16,10 +16,10 @@ public class Grupo {
     public void alocar(Aluno aluno){
         this.alunos.add(aluno);
     }
+
     public String imprimirAlunos(){
-        System.out.println("\nAlunos do grupo " + this.nome + ":");
-        String imprimir = "";
-        for (Aluno aluno : alunos) {
+        String imprimir = "\nAlunos do grupo " + this.nome + ":\n";
+        for (Aluno aluno : this.alunos) {
             imprimir += "* " + aluno.toString() + "\n";
         }
 
