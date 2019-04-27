@@ -7,7 +7,7 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         ControleAlunos turma = new ControleAlunos();
 
-        String opcao = "";
+        String opcao;
         do{
 
             System.out.println("\n(C)adastrar Aluno");
@@ -21,65 +21,101 @@ public class Main {
 
             opcao = teclado.nextLine();
 
-            if(opcao.equals("C")){
+            switch (opcao) {
+                case "C": {
 
-                System.out.print("\nMatrícula: ");
-                String matricula = teclado.nextLine();
-                System.out.print("Nome: ");
-                String nome = teclado.nextLine();
-                System.out.print("Curso: ");
-                String curso = teclado.nextLine();
-
-                System.out.println(turma.cadastraAluno(matricula, nome, curso));
-
-            }else if(opcao.equals("E")){
-
-                System.out.print("\nMatrícula: ");
-                String matricula = teclado.nextLine();
-
-                System.out.println(turma.exibirAluno(matricula));
-
-            }else if(opcao.equals("N")){
-
-                System.out.print("\nGrupo: ");
-                String nome = teclado.nextLine();
-
-                System.out.println(turma.novoGrupo(nome));
-
-            }else if(opcao.equals("A")){
-
-                System.out.print("\n(A)locar Aluno ou (I)mprimir Grupo? ");
-                opcao = teclado.nextLine();
-
-                if (opcao.equals("A")) {
-
-                    System.out.print("\nMatricula: ");
+                    System.out.print("\nMatrícula: ");
                     String matricula = teclado.nextLine();
-                    System.out.print("Grupo: ");
-                    String grupo = teclado.nextLine();
 
-                    System.out.println(turma.alocarAluno(matricula, grupo));
+                    System.out.print("Nome: ");
+                    String nome = teclado.nextLine();
 
-                } else if (opcao.equals("I")) {
+                    System.out.print("Curso: ");
+                    String curso = teclado.nextLine();
+
+                    if(turma.cadastraAluno(matricula, nome, curso)){
+                        System.out.println("CADASTRO REALIZADO!");
+                    }else{
+                        System.out.println("MATRÍCULA JÁ CADASTRADA!");
+                    }
+
+                    break;
+                }
+                case "E": {
+
+                    System.out.print("\nMatrícula: ");
+                    String matricula = teclado.nextLine();
+
+                    System.out.println(turma.exibirAluno(matricula));
+
+                    break;
+                }
+                case "N": {
 
                     System.out.print("\nGrupo: ");
-                    String grupo = teclado.nextLine();
+                    String nome = teclado.nextLine();
 
-                    System.out.println(turma.imprimirGrupo(grupo));
+                    if(turma.novoGrupo(nome)){
+                        System.out.println("CADASTRO REALIZADO!");
+                    }else{
+                        System.out.println("GRUPO JÁ CADASTRADO!");
+                    }
 
+                    break;
                 }
+                case "A":
 
-            }else if(opcao.equals("R")){
+                    System.out.print("\n(A)locar Aluno ou (I)mprimir Grupo? ");
+                    opcao = teclado.nextLine();
 
-                System.out.print("\nMatrícula: ");
-                String matricula = teclado.nextLine();
+                    if (opcao.equals("A")) {
 
-                System.out.println(turma.registrarAlunosResponderam(matricula));
+                        System.out.print("\nMatricula: ");
+                        String matricula = teclado.nextLine();
 
-            }else if (opcao.equals("I")){
+                        System.out.print("Grupo: ");
+                        String grupo = teclado.nextLine();
 
-                System.out.println(turma.imprimirAlunosResponderam());
+                        StatusCadastro resultado = turma.alocarAluno(matricula, grupo);
+                        if (resultado.equals(StatusCadastro.Sucesso)){
+                            System.out.println("ALUNO ALOCADO!");
+                        }else  if(resultado.equals(StatusCadastro.SemGrupo)){
+                            System.out.println("Grupo não cadastrado.");
+                        }else{
+                            System.out.println("Aluno não cadastrado.");
+                        }
 
+                    } else if (opcao.equals("I")) {
+
+                        System.out.print("\nGrupo: ");
+                        String grupo = teclado.nextLine();
+
+                        System.out.println(turma.imprimirGrupo(grupo));
+
+                    }
+
+                    break;
+                case "R": {
+
+                    System.out.print("\nMatrícula: ");
+                    String matricula = teclado.nextLine();
+
+                    if(turma.registrarAlunosResponderam(matricula)){
+                        System.out.println("ALUNO REGISTRADO!");
+                    }else{
+                        System.out.println("Aluno não cadastrado.");
+                    }
+
+                    break;
+                }
+                case "I":
+
+                    System.out.println(turma.imprimirAlunosResponderam());
+
+                    break;
+                default:
+                    System.out.println("Opção inválida!");
+                    break;
             }
 
         }while (!opcao.equals("O"));

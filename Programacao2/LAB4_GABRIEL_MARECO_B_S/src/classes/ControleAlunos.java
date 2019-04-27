@@ -14,18 +14,30 @@ public class ControleAlunos {
         this.alunosResponderam = new ArrayList<>();
     }
 
-    public String cadastraAluno(String matricula, String nome, String curso) {
+    public boolean cadastraAluno(String matricula, String nome, String curso) {
+
+        if(matricula == null){
+            throw new NullPointerException("MATRÍCULA NULA");
+        }else if(matricula.trim().equals("")){
+            throw new IllegalArgumentException("MATRÍCULA VAZIA");
+        }
 
         if(this.mapaMatriculaAlunos.containsKey(matricula)){
-            return "MATRÍCULA JÁ CADASTRADA!";
+            return false;
         }else{
             this.mapaMatriculaAlunos.put(matricula, new Aluno(nome, curso, matricula));
-            return "CADASTRO REALIZADO!";
+            return true;
         }
 
     }
 
     public String exibirAluno(String matricula) {
+
+        if(matricula == null){
+            throw new NullPointerException("MATRÍCULA NULA");
+        }else if(matricula.trim().equals("")){
+            throw new IllegalArgumentException("MATRÍCULA VAZIA");
+        }
 
         if (this.mapaMatriculaAlunos.containsKey(matricula)){
             return ("\nAluno: " + this.mapaMatriculaAlunos.get(matricula).toString());
@@ -35,33 +47,60 @@ public class ControleAlunos {
 
     }
 
-    public String novoGrupo(String nome) {
+    public boolean novoGrupo(String nome) {
+
+        if(nome == null){
+            throw new NullPointerException("GRUPO NULO");
+        }else if(nome.trim().equals("")){
+            throw new IllegalArgumentException("GRUPO VAZIO");
+        }
 
         if(this.mapaGrupo.containsKey(nome.toUpperCase())){
-            return ("GRUPO JÁ CADASTRADO!");
+            return (false);
         }else{
             this.mapaGrupo.put(nome.toUpperCase(), new Grupo(nome));
-            return ("CADASTRO REALIZADO!");
+            return (true);
         }
 
     }
 
-    public String alocarAluno(String matricula, String grupo) {
+    public StatusCadastro alocarAluno(String matricula, String grupo) {
+
+        if(matricula == null){
+            throw new NullPointerException("MATRÍCULA NULA");
+        }else if(matricula.trim().equals("")){
+            throw new IllegalArgumentException("MATRÍCULA VAZIA");
+        }
+
+        if(grupo == null){
+            throw new NullPointerException("GRUPO NULO");
+        }else if(grupo.trim().equals("")){
+            throw new IllegalArgumentException("GRUPO VAZIO");
+        }
 
         if (this.mapaGrupo.containsKey(grupo.toUpperCase()) && this.mapaMatriculaAlunos.containsKey(matricula)){
 
             this.mapaGrupo.get(grupo.toUpperCase()).alocar(this.mapaMatriculaAlunos.get(matricula));
-            return ("ALUNO ALOCADO!");
+            return (StatusCadastro.Sucesso);
 
         }else if(!this.mapaGrupo.containsKey(grupo.toUpperCase())){
-            return ("Grupo não cadastrado.");
+
+            return (StatusCadastro.SemGrupo);
+
         }else{
-            return ("Aluno não cadastrado.");
+
+            return (StatusCadastro.AlunoNaoCadastrado);
         }
 
     }
 
     public String imprimirGrupo(String grupo) {
+
+        if(grupo == null){
+            throw new NullPointerException("GRUPO NULO");
+        }else if(grupo.trim().equals("")){
+            throw new IllegalArgumentException("GRUPO VAZIO");
+        }
 
         if(this.mapaGrupo.containsKey(grupo.toUpperCase())){
             return ( this.mapaGrupo.get(grupo.toUpperCase()).imprimirAlunos() );
@@ -71,13 +110,19 @@ public class ControleAlunos {
 
     }
 
-    public String registrarAlunosResponderam(String matricula) {
+    public boolean registrarAlunosResponderam(String matricula) {
+
+        if(matricula == null){
+            throw new NullPointerException("MATRÍCULA NULA");
+        }else if(matricula.trim().equals("")){
+            throw new IllegalArgumentException("MATRÍCULA VAZIA");
+        }
 
         if(this.mapaMatriculaAlunos.containsKey(matricula)){
             this.alunosResponderam.add(this.mapaMatriculaAlunos.get(matricula));
-            return ("ALUNO REGISTRADO!");
+            return (true);
         }else{
-            return ("Aluno não cadastrado.");
+            return (false);
         }
 
     }
@@ -90,5 +135,17 @@ public class ControleAlunos {
         }
 
         return imprimir;
+    }
+
+    public HashMap<String, Aluno> getMapaMatriculaAlunos() {
+        return mapaMatriculaAlunos;
+    }
+
+    public HashMap<String, Grupo> getMapaGrupo() {
+        return mapaGrupo;
+    }
+
+    public ArrayList<Aluno> getAlunosResponderam() {
+        return alunosResponderam;
     }
 }

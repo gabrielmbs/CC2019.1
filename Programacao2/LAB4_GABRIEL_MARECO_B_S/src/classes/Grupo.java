@@ -8,6 +8,13 @@ public class Grupo {
     private HashSet<Aluno> alunos;
 
     public Grupo(String nome) {
+
+        if(nome == null){
+            throw new NullPointerException("NOME NULO");
+        }else if(nome.trim().equals("")){
+            throw new IllegalArgumentException("NOME VAZIO");
+        }
+
         this.nome = nome;
         this.alunos = new HashSet<>();
 
@@ -24,6 +31,14 @@ public class Grupo {
         }
 
         return imprimir;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public HashSet<Aluno> getAlunos() {
+        return alunos;
     }
 
     @Override
