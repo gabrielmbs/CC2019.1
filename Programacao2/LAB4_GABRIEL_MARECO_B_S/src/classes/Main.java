@@ -2,6 +2,11 @@ package classes;
 
 import java.util.Scanner;
 
+/**
+ * Classe main, responsavel por interagir com o usuario, através das entradas e saidas.
+ *
+ * @author Gabriel Mareco Batista de Souto
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
