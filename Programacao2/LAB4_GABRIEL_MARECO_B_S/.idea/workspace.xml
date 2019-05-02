@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c134870-3a54-4554-ab68-753f1a6c0992" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ControleAlunos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ControleAlunos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Grupo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Grupo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/StatusCadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/StatusCadastro.java" afterDir="false" />
-    </list>
+    <list default="true" id="4c134870-3a54-4554-ab68-753f1a6c0992" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,22 +15,24 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1585244603">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testes/classesTeste/AlunoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state relative-caret-position="298">
+              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
               <folding>
                 <element signature="e#1573#1574#0" expanded="true" />
                 <element signature="e#1647#1648#0" expanded="true" />
@@ -48,20 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/Aluno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-              <folding>
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1520#1521#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
-                <element signature="e#3204#3205#0" expanded="true" />
-                <element signature="e#3250#3251#0" expanded="true" />
-              </folding>
+            <state>
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -69,27 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/Grupo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="103" column="50" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
-              <folding>
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1768#1769#0" expanded="true" />
-                <element signature="e#1920#1921#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#2657#2658#0" expanded="true" />
-                <element signature="e#2698#2699#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/StatusCadastro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state>
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
             </state>
           </provider>
         </entry>
@@ -122,11 +87,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="585" />
-    <option name="y" value="25" />
+    <option name="y" value="27" />
     <option name="width" value="781" />
-    <option name="height" value="741" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -134,8 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,32 +108,11 @@
               <item name="LAB4_GABRIEL_MARECO_B_S" type="b2602c69:ProjectViewProjectNode" />
               <item name="LAB4_GABRIEL_MARECO_B_S" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="462c0819:PsiDirectoryNode" />
-              <item name="testes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB4_GABRIEL_MARECO_B_S" type="462c0819:PsiDirectoryNode" />
-              <item name="testes" type="462c0819:PsiDirectoryNode" />
-              <item name="classesTeste" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,7 +127,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -229,7 +173,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="classesTeste" />
       <option name="MAIN_CLASS_NAME" value="classesTeste.AlunoTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -276,11 +219,17 @@
       </extension>
       <option name="PACKAGE_NAME" value="classesTeste" />
       <option name="MAIN_CLASS_NAME" value="classesTeste.ControleAlunosTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AlunoTest" />
+      <item itemvalue="JUnit.AlunoTest.equalsTeste" />
+      <item itemvalue="JUnit.AlunoTest.hashCodeTeste" />
+      <item itemvalue="JUnit.ControleAlunosTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -350,10 +299,9 @@
     <option name="totallyTimeSpent" value="41970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="585" y="25" width="781" height="743" extended-state="4" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20816326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08688434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,6 +337,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LAB4_GABRIEL_MARECO_B_S$GrupoTest.ic" NAME="GrupoTest Coverage Results" MODIFIED="1556376054889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>classesTeste.*</FILTER>
@@ -419,80 +370,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/ControleAlunos.java">
+    <entry file="file://$PROJECT_DIR$/src/classes/ControleAlunos.java" />
+    <entry file="file://$PROJECT_DIR$/src/classes/StatusCadastro.java" />
+    <entry file="file://$PROJECT_DIR$/src/classes/Main.java" />
+    <entry file="file://$PROJECT_DIR$/testes/classesTeste/AlunoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="298">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8413#8414#0" expanded="true" />
-            <element signature="e#8455#8456#0" expanded="true" />
-            <element signature="e#8507#8508#0" expanded="true" />
-            <element signature="e#8539#8540#0" expanded="true" />
-            <element signature="e#8593#8594#0" expanded="true" />
-            <element signature="e#8633#8634#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1647#1648#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/StatusCadastro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Aluno.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#3204#3205#0" expanded="true" />
-            <element signature="e#3250#3251#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Grupo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="103" column="50" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
-          <folding>
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1768#1769#0" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-            <element signature="e#2698#2699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testes/classesTeste/AlunoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
