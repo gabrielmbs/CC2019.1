@@ -7,7 +7,7 @@ public class Fornecedor {
     private String nome;
     private String email;
     private String telefone;
-    private HashMap<Integer,Produto> listaDeProdutos;
+    private HashMap<DescritorProduto,Produto> listaDeProdutos;
 
     public Fornecedor(String nome, String email, String telefone) {
         this.nome = nome;
@@ -16,10 +16,14 @@ public class Fornecedor {
         this.listaDeProdutos = new HashMap<>();
     }
 
-    public HashMap<Integer,Produto> getListaDeProdutos() {
-        return listaDeProdutos;
+    public String adicionaProduto(String nome, String descricao, String preco){
+        DescritorProduto chave = new DescritorProduto(nome,descricao);
+        if(this.listaDeProdutos.containsKey(chave)){
+            throw new IllegalArgumentException("Produto já existe");
+        }else{
+            return "produto cadastrado";
+        }
     }
-
     public void setEmail(String email) {
         this.email = email;
     }

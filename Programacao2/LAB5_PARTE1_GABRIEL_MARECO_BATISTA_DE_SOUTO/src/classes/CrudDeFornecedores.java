@@ -1,5 +1,6 @@
 package classes;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CrudDeFornecedores {
@@ -28,16 +29,13 @@ public class CrudDeFornecedores {
     }
 
     public String exibeTodosOsFornecedores(){
-        String imprimir = "";
-        int controle = 0;
+        ArrayList<String> todosOsFornecedores = new ArrayList();
         for (Fornecedor fornecedor : this.mapaNomeFornecedor.values()) {
-            if(controle > 0 && controle < this.mapaNomeFornecedor.size()){
-                imprimir += " | ";
-            }
-            imprimir += fornecedor.toString();
-            controle += 1;
+            todosOsFornecedores.add(fornecedor.toString());
         }
+        String imprimir = String.join(" | ", todosOsFornecedores);
         return imprimir;
+
     }
 
     public boolean editarEmailDeUmFornecedor(String nome, String email){
@@ -58,7 +56,7 @@ public class CrudDeFornecedores {
         }
     }
 
-    public boolean removerCliente(String nome){
+    public boolean removerFornecedor(String nome){
         if(this.mapaNomeFornecedor.containsKey(nome)){
             this.mapaNomeFornecedor.remove(nome);
             return true;
@@ -67,70 +65,7 @@ public class CrudDeFornecedores {
         }
     }
 
-    public boolean adicionaProduto(String nome, int id, Produto produto) {
-        if (this.mapaNomeFornecedor.containsKey(nome)) {
-            this.mapaNomeFornecedor.get(nome).getListaDeProdutos().put(id,produto);
-            return true;
-        } else {
-            throw new IllegalArgumentException("Fornecedor não existe");
-        }
-    }
-
-    public String exibeUmProdutoDeUmFornecedor(String nome, int id){
-        if (this.mapaNomeFornecedor.containsKey(nome)) {
-            return this.mapaNomeFornecedor.get(nome).getListaDeProdutos().get(id).toString();
-        } else {
-            throw new IllegalArgumentException("Fornecedor não existe");
-        }
-    }
-    public String exibeTodosProdutosDeUmFornecedor(String nome){
-        if (this.mapaNomeFornecedor.containsKey(nome)) {
-            String imprimir = "";
-            int controle = 0;
-            for (Produto produto : this.mapaNomeFornecedor.get(nome).getListaDeProdutos().values()) {
-                if(controle > 0 && controle < this.mapaNomeFornecedor.size()){
-                    imprimir += " | ";
-                }
-                imprimir += produto.toString();
-                controle += 1;
-            }
-            return imprimir;
-        } else {
-            throw new IllegalArgumentException("Fornecedor não existe");
-        }
-    }
-
-    public String exibeTodosProdutos() {
-        String imprimir = "";
-        for (Fornecedor fornecedor : this.mapaNomeFornecedor.values()) {
-            int controle = 0;
-            for (Produto produto : fornecedor.getListaDeProdutos().values()) {
-                if(controle > 0 && controle < this.mapaNomeFornecedor.size()){
-                    imprimir += " | ";
-                }
-                imprimir += produto.toString();
-                controle += 1;
-            }
-
-        }
-        return imprimir;
-    }
-
-    public boolean editarPrecoDeUmProdutoDeUmFornecedor(String nome, int id, String preco) {
-        if (this.mapaNomeFornecedor.containsKey(nome)) {
-            this.mapaNomeFornecedor.get(nome).getListaDeProdutos().get(id).setPreco(preco);
-            return true;
-        } else {
-            throw new IllegalArgumentException("Fornecedor não existe");
-        }
-    }
-
-    public boolean removerProdutoDoFornecedor(String nome, int id) {
-        if (this.mapaNomeFornecedor.containsKey(nome)) {
-            this.mapaNomeFornecedor.get(nome).getListaDeProdutos().remove(id);
-            return true;
-        } else {
-            throw new IllegalArgumentException("Fornecedor não existe");
-        }
+    public String CadastrarProdutoParaUmFornecedo(String nome, String descricao, String preco, String fornecedor){
+        this.mapaNomeFornecedor.get(fornecedor).
     }
 }

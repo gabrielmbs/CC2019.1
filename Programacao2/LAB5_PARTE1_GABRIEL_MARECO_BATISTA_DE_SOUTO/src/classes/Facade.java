@@ -58,6 +58,6 @@ public class Facade {
     }
 
     public boolean removerFornecedor(String nome){
-        return this.fornecedores.removerCliente(nome);
+        return this.fornecedores.removerFornecedor(nome);
     }
 }

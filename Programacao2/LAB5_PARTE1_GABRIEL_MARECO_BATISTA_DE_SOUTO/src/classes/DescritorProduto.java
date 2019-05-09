@@ -2,12 +2,12 @@ package classes;
 
 import java.util.Objects;
 
-public class Descritor {
+public class DescritorProduto {
     private String nome;
     private String descricao;
 
 
-    public Descritor(String nome, String descricao) {
+    public DescritorProduto(String nome, String descricao) {
         this.nome = nome;
         this.descricao = descricao;
     }
@@ -16,7 +16,7 @@ public class Descritor {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Descritor descritor = (Descritor) o;
+        DescritorProduto descritor = (DescritorProduto) o;
         return Objects.equals(nome, descritor.nome) &&
                 Objects.equals(descricao, descritor.descricao);
     }
