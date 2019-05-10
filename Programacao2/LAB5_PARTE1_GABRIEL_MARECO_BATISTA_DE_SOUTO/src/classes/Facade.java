@@ -1,5 +1,7 @@
 package classes;
 
+import easyaccept.EasyAccept;
+
 public class Facade {
     private CrudDeClientes clientes;
     private CrudDeFornecedores fornecedores;
@@ -9,7 +11,12 @@ public class Facade {
         this.fornecedores = new CrudDeFornecedores();
     }
 
-    public String cadastraCliente(String cpf, String nome, String email, String localizacao){
+    public static void main(String[] args) {
+        args = new String[] {"classes.Facade", "acceptance_test/use_case_1.txt", "acceptance_test/use_case_2.txt"};
+        EasyAccept.main(args);
+    }
+
+    public String adicionaCliente(String cpf, String nome, String email, String localizacao){
         return this.clientes.cadastraCliente(cpf, nome, email, localizacao);
     }
 
@@ -17,47 +24,37 @@ public class Facade {
         return this.clientes.exibeCliente(cpf);
     }
 
-    public String exibeTodosOsClientes(){
+    public String exibeTodosClientes(){
         return this.clientes.exibeTodosOsClientes();
     }
 
-    public boolean editarNomeDeUmCliente(String cpf, String nome){
-        return this.clientes.editarNomeDeUmCliente(cpf,nome);
+    public boolean editaCliente(String cpf, String atributo, String novoValor){
+        return this.clientes.editarUmCliente(cpf,atributo,novoValor);
     }
 
-    public boolean editarEmailDeUmCliente(String cpf, String email){
-        return this.clientes.editarEmailDeUmCliente(cpf,email);
-    }
-
-    public boolean editarLocalizacaoDeUmCliente(String cpf, String localizacao){
-        return this.clientes.editarLocalizacaoDeUmCliente(cpf,localizacao);
-    }
-
-    public boolean removerCliente(String cpf){
+    public boolean removeCliente(String cpf){
         return this.clientes.removerCliente(cpf);
     }
 
-    public String cadastraFornecedor(String nome, String email, String telefone){
-        return this.fornecedores.cadastraFornecedor(nome, email, telefone);
+    //
+
+    public String adicionaFornecedor(String nome, String email, String telefone){
+        return this.fornecedores.cadastraFornecedor(nome,email,telefone);
     }
 
     public String exibeFornecedor(String nome){
         return this.fornecedores.exibeFornecedor(nome);
     }
 
-    public String exibeTodosOsFornecedores(){
+    public String exibeTodosFornecedores(){
         return this.fornecedores.exibeTodosOsFornecedores();
     }
 
-    public boolean editarEmailDeUmFornecedor(String nome, String email){
-        return this.fornecedores.editarEmailDeUmFornecedor(nome,email);
+    public boolean editaFornecedor(String nome, String atributo, String novoValor){
+        return this.fornecedores.editaFornecedor(nome, atributo,novoValor);
     }
 
-    public boolean editarTelefoneDeUmFornecedor(String nome, String telefone){
-        return this.fornecedores.editarTelefoneDeUmFornecedor(nome,telefone);
-    }
-
-    public boolean removerFornecedor(String nome){
+    public boolean removeFornecedor(String nome){
         return this.fornecedores.removerFornecedor(nome);
     }
 }

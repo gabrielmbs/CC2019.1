@@ -11,8 +11,14 @@ public class CrudDeFornecedores {
     }
 
     public String cadastraFornecedor(String nome, String email, String telefone){
+        if(nome == null){
+            throw new NullPointerException("Erro no cadastro do fornecedor: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro no cadastro do fornecedor: nome nao pode ser vazio ou nulo.");
+        }
+
         if(this.mapaNomeFornecedor.containsKey(nome)){
-            throw new IllegalArgumentException("Fornecedor já existe");
+            throw new IllegalArgumentException("Erro no cadastro de fornecedor: fornecedor ja existe.");
         }else{
             this.mapaNomeFornecedor.put(nome, new Fornecedor(nome, email, telefone));
             return nome;
@@ -20,11 +26,17 @@ public class CrudDeFornecedores {
     }
 
     public String exibeFornecedor(String nome){
+        if(nome == null){
+            throw new NullPointerException("Erro na exibicao do fornecedor: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na exibicao do fornecedor: nome nao pode ser vazio ou nulo.");
+        }
+
         if(this.mapaNomeFornecedor.containsKey(nome)){
             Fornecedor fornecedor = this.mapaNomeFornecedor.get(nome);
             return fornecedor.toString();
         }else{
-            throw new IllegalArgumentException("Fornecedor não existe");
+            throw new IllegalArgumentException("Erro na exibicao do fornecedor: fornecedor nao existe.");
         }
     }
 
@@ -38,34 +50,55 @@ public class CrudDeFornecedores {
 
     }
 
-    public boolean editarEmailDeUmFornecedor(String nome, String email){
-        if(this.mapaNomeFornecedor.containsKey(nome)){
-            this.mapaNomeFornecedor.get(nome).setEmail(email);
-            return true;
-        }else{
-            throw new IllegalArgumentException("Fornecedor não existe");
+    public boolean editaFornecedor(String nome, String atributo, String novoValor){
+        if(nome == null){
+            throw new NullPointerException("Erro na edicao do fornecedor: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: nome nao pode ser vazio ou nulo.");
         }
-    }
+        if(atributo == null){
+            throw new NullPointerException("Erro na edicao do fornecedor: atributo nao pode ser vazio ou nulo.");
+        }else if("".equals(atributo.trim())){
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: atributo nao pode ser vazio ou nulo.");
+        }else if("nome".equals(atributo)){
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: nome nao pode ser editado.");
+        }
+        if(novoValor == null){
+            throw new NullPointerException("Erro na edicao do fornecedor: novo valor nao pode ser vazio ou nulo.");
+        }else if("".equals(novoValor.trim())){
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: novo valor nao pode ser vazio ou nulo.");
+        }
 
-    public boolean editarTelefoneDeUmFornecedor(String nome, String telefone){
         if(this.mapaNomeFornecedor.containsKey(nome)){
-            this.mapaNomeFornecedor.get(nome).setTelefone(telefone);
+            if("email".equals(atributo)){
+                this.mapaNomeFornecedor.get(nome).setEmail(novoValor);
+            }else if ("telefone".equals(atributo)){
+                this.mapaNomeFornecedor.get(nome).setTelefone(novoValor);
+            }else{
+                throw new IllegalArgumentException("Erro na edicao do fornecedor: atributo nao existe.");
+            }
             return true;
         }else{
-            throw new IllegalArgumentException("Fornecedor não existe");
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: fornecedor nao existe.");
         }
     }
 
     public boolean removerFornecedor(String nome){
+        if(nome == null){
+            throw new NullPointerException("Erro na remocao do fornecedor: nome do fornecedor nao pode ser nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na remocao do fornecedor: nome do fornecedor nao pode ser vazio.");
+        }
+
         if(this.mapaNomeFornecedor.containsKey(nome)){
             this.mapaNomeFornecedor.remove(nome);
             return true;
         }else{
-            throw new IllegalArgumentException("Fornecedor não existe");
+            throw new IllegalArgumentException("Erro na remocao do fornecedor: fornecedor nao existe.");
         }
     }
 
-    public String CadastrarProdutoParaUmFornecedo(String nome, String descricao, String preco, String fornecedor){
-        this.mapaNomeFornecedor.get(fornecedor).
-    }
+    //public String CadastrarProdutoParaUmFornecedo(String nome, String descricao, String preco, String fornecedor){
+    //    this.mapaNomeFornecedor.get(fornecedor).
+    //}
 }

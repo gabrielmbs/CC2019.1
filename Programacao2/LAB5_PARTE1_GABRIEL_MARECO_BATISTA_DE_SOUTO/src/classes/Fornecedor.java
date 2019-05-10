@@ -10,6 +10,23 @@ public class Fornecedor {
     private HashMap<DescritorProduto,Produto> listaDeProdutos;
 
     public Fornecedor(String nome, String email, String telefone) {
+
+        if(nome == null){
+            throw new NullPointerException("Erro no cadastro do fornecedor: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro no cadastro do fornecedor: nome nao pode ser vazio ou nulo.");
+        }
+        if(email == null){
+            throw new NullPointerException("Erro no cadastro do fornecedor: email nao pode ser vazio ou nulo.");
+        }else if("".equals(email.trim())){
+            throw new IllegalArgumentException("Erro no cadastro do fornecedor: email nao pode ser vazio ou nulo.");
+        }
+        if(telefone == null){
+            throw new NullPointerException("Erro no cadastro do fornecedor: telefone nao pode ser vazio ou nulo.");
+        }else if("".equals(telefone.trim())){
+            throw new IllegalArgumentException("Erro no cadastro do fornecedor: telefone nao pode ser vazio ou nulo.");
+        }
+
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
