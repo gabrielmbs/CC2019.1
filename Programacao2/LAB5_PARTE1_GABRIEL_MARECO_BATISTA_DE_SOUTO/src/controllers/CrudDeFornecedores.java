@@ -129,6 +129,15 @@ public class CrudDeFornecedores {
         }
     }
 
+    public String exibeProdutosDosFornecedores(){
+        ArrayList<String> todosOsProdutos = new ArrayList();
+        for (Fornecedor fornecedor : this.mapaNomeFornecedor.values()) {
+            todosOsProdutos.add(fornecedor.exibeTodosProdutos());
+        }
+        String imprimir = String.join(" | ", todosOsProdutos);
+        return imprimir;
+    }
+
     public boolean editaProduto(String nome, String descricao, String fornecedor, double novoPreco){
         if(fornecedor == null){
             throw new NullPointerException("Erro na edicao de produto: fornecedor nao pode ser vazio ou nulo.");
@@ -142,4 +151,19 @@ public class CrudDeFornecedores {
             throw new IllegalArgumentException("Erro na edicao de produto: fornecedor nao existe.");
         }
     }
+
+    public boolean removeProduto(String nome, String descricao, String fornecedor){
+        if(fornecedor == null){
+            throw new NullPointerException("Erro na remocao de produto: fornecedor nao pode ser vazio ou nulo.");
+        }else if("".equals(fornecedor.trim())){
+            throw new IllegalArgumentException("Erro na remocao de produto: fornecedor nao pode ser vazio ou nulo.");
+        }
+
+        if(this.mapaNomeFornecedor.containsKey(fornecedor)){
+            return this.mapaNomeFornecedor.get(fornecedor).removeProduto(nome,descricao);
+        }else{
+            throw new IllegalArgumentException("Erro na remocao de produto: fornecedor nao existe.");
+        }
+    }
+
 }

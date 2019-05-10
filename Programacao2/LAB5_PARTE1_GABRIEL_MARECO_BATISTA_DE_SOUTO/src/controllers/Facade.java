@@ -73,8 +73,16 @@ public class Facade {
         return this.fornecedores.exibeProduto(nome,descricao,fornecedor);
     }
 
+    public String exibeProdutosDosFornecedores(){
+        return this.fornecedores.exibeProdutosDosFornecedores();
+    }
+
     public boolean editaProduto(String nome, String descricao, String fornecedor, double novoPreco){
         return this.fornecedores.editaProduto(nome,descricao,fornecedor,novoPreco);
+    }
+
+    public boolean removeProduto(String nome, String descricao, String fornecedor){
+        return this.fornecedores.removeProduto(nome,descricao,fornecedor);
     }
 
 }

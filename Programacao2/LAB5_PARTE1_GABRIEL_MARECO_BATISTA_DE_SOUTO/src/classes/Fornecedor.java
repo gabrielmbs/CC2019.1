@@ -2,6 +2,7 @@ package classes;
 
 import util.DescritorProduto;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -75,6 +76,15 @@ public class Fornecedor {
         }
     }
 
+    public String exibeTodosProdutos() {
+        ArrayList<String> todosOsProdutos = new ArrayList();
+        for (Produto produto : this.listaDeProdutos.values()) {
+            todosOsProdutos.add(produto.toString());
+        }
+        String imprimir = String.join(" | ", todosOsProdutos);
+        return imprimir;
+    }
+
     public boolean editaProduto(String nome, String descricao, double novoPreco){
         if(nome == null){
             throw new NullPointerException("Erro na edicao de produto: nome nao pode ser vazio ou nulo.");
@@ -98,6 +108,7 @@ public class Fornecedor {
             throw new IllegalArgumentException("Erro na edicao de produto: produto nao existe.");
         }
     }
+
 
     public void setEmail(String email) {
         this.email = email;
@@ -123,5 +134,26 @@ public class Fornecedor {
     @Override
     public int hashCode() {
         return Objects.hash(nome);
+    }
+
+    public boolean removeProduto(String nome, String descricao) {
+        if(nome == null){
+            throw new NullPointerException("Erro na remocao de produto: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na remocao de produto: nome nao pode ser vazio ou nulo.");
+        }
+        if(descricao == null){
+            throw new NullPointerException("Erro na remocao de produto: descricao nao pode ser vazia ou nula.");
+        }else if("".equals(descricao.trim())){
+            throw new IllegalArgumentException("Erro na remocao de produto: descricao nao pode ser vazia ou nula.");
+        }
+
+        DescritorProduto chave = new DescritorProduto(nome,descricao);
+        if(this.listaDeProdutos.containsKey(chave)){
+            this.listaDeProdutos.remove(chave);
+            return true;
+        }else{
+            throw new IllegalArgumentException("Erro na remocao de produto: produto nao existe.");
+        }
     }
 }
