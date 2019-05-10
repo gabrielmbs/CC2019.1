@@ -5,21 +5,35 @@ import java.util.Objects;
 public class Produto {
     private String nome;
     private String descricao;
-    private String preco;
+    private double preco;
 
-    public Produto(String nome, String descricao, String preco) {
+    public Produto(String nome, String descricao, double preco) {
+        if(nome == null){
+            throw new NullPointerException("Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        }
+        if(descricao == null){
+            throw new NullPointerException("Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
+        }else if("".equals(descricao.trim())){
+            throw new IllegalArgumentException("Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
+        }
+        if(preco < 0){
+            throw new NullPointerException("Erro no cadastro de produto: preco invalido.");
+        }
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
     }
 
-    public void setPreco(String preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
     @Override
     public String toString() {
-        return this.nome + " - " + this.descricao + " - " + this.preco;
+        String resultado = String.format("%.2f", this.preco);
+        return this.nome + " - " + this.descricao + " - " +"R$"+ resultado;
     }
 
     @Override

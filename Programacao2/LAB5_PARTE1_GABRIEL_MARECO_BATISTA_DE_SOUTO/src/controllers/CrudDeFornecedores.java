@@ -1,4 +1,6 @@
-package classes;
+package controllers;
+
+import classes.Fornecedor;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -98,7 +100,46 @@ public class CrudDeFornecedores {
         }
     }
 
-    //public String CadastrarProdutoParaUmFornecedo(String nome, String descricao, String preco, String fornecedor){
-    //    this.mapaNomeFornecedor.get(fornecedor).
-    //}
+    public boolean cadastrarProdutoParaUmFornecedo(String fornecedor, String nome, String descricao, double preco){
+        if(fornecedor == null){
+            throw new NullPointerException("Erro no cadastro de produto: fornecedor nao pode ser vazio ou nulo.");
+        }else if("".equals(fornecedor.trim())){
+            throw new IllegalArgumentException("Erro no cadastro de produto: fornecedor nao pode ser vazio ou nulo.");
+        }
+
+        if(this.mapaNomeFornecedor.containsKey(fornecedor)){
+            return this.mapaNomeFornecedor.get(fornecedor).adicionaProduto(nome,descricao,preco);
+        }else{
+            throw new IllegalArgumentException("Erro no cadastro de produto: fornecedor nao existe.");
+        }
+
+    }
+
+    public String exibeProduto(String nome, String descricao, String fornecedor){
+        if(fornecedor == null){
+            throw new NullPointerException("Erro na exibicao de produto: fornecedor nao pode ser vazio ou nulo.");
+        }else if("".equals(fornecedor.trim())){
+            throw new IllegalArgumentException("Erro na exibicao de produto: fornecedor nao pode ser vazio ou nulo.");
+        }
+
+        if(this.mapaNomeFornecedor.containsKey(fornecedor)){
+            return this.mapaNomeFornecedor.get(fornecedor).exibeProduto(nome,descricao);
+        }else{
+            throw new IllegalArgumentException("Erro na exibicao de produto: fornecedor nao existe.");
+        }
+    }
+
+    public boolean editaProduto(String nome, String descricao, String fornecedor, double novoPreco){
+        if(fornecedor == null){
+            throw new NullPointerException("Erro na edicao de produto: fornecedor nao pode ser vazio ou nulo.");
+        }else if("".equals(fornecedor.trim())){
+            throw new IllegalArgumentException("Erro na edicao de produto: fornecedor nao pode ser vazio ou nulo.");
+        }
+
+        if(this.mapaNomeFornecedor.containsKey(fornecedor)){
+            return this.mapaNomeFornecedor.get(fornecedor).editaProduto(nome,descricao,novoPreco);
+        }else{
+            throw new IllegalArgumentException("Erro na edicao de produto: fornecedor nao existe.");
+        }
+    }
 }

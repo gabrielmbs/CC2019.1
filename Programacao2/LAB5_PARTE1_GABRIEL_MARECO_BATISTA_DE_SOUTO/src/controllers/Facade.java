@@ -1,5 +1,7 @@
-package classes;
+package controllers;
 
+import controllers.CrudDeClientes;
+import controllers.CrudDeFornecedores;
 import easyaccept.EasyAccept;
 
 public class Facade {
@@ -12,10 +14,13 @@ public class Facade {
     }
 
     public static void main(String[] args) {
-        args = new String[] {"classes.Facade", "acceptance_test/use_case_1.txt", "acceptance_test/use_case_2.txt"};
+        args = new String[] {"controllers.Facade", "acceptance_test/use_case_1.txt", "acceptance_test/use_case_2.txt",
+                            "acceptance_test/use_case_3.txt"};
         EasyAccept.main(args);
     }
 
+
+    //Crud Cliente
     public String adicionaCliente(String cpf, String nome, String email, String localizacao){
         return this.clientes.cadastraCliente(cpf, nome, email, localizacao);
     }
@@ -36,7 +41,7 @@ public class Facade {
         return this.clientes.removerCliente(cpf);
     }
 
-    //
+    //Crud Fornecedor
 
     public String adicionaFornecedor(String nome, String email, String telefone){
         return this.fornecedores.cadastraFornecedor(nome,email,telefone);
@@ -57,4 +62,19 @@ public class Facade {
     public boolean removeFornecedor(String nome){
         return this.fornecedores.removerFornecedor(nome);
     }
+
+    //Crud Produto
+
+    public boolean adicionaProduto(String fornecedor, String nome, String descricao, double preco){
+        return this.fornecedores.cadastrarProdutoParaUmFornecedo(fornecedor, nome,descricao,preco);
+    }
+
+    public String exibeProduto(String nome, String descricao, String fornecedor){
+        return this.fornecedores.exibeProduto(nome,descricao,fornecedor);
+    }
+
+    public boolean editaProduto(String nome, String descricao, String fornecedor, double novoPreco){
+        return this.fornecedores.editaProduto(nome,descricao,fornecedor,novoPreco);
+    }
+
 }

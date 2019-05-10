@@ -1,10 +1,12 @@
-package classes;
+package controllers;
+
+import classes.Cliente;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CrudDeClientes {
-    private HashMap<String,Cliente> mapaCpfCliente;
+    private HashMap<String, Cliente> mapaCpfCliente;
 
     public CrudDeClientes() {
         this.mapaCpfCliente = new HashMap<>();

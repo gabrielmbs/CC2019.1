@@ -1,5 +1,7 @@
 package classes;
 
+import util.DescritorProduto;
+
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -33,14 +35,70 @@ public class Fornecedor {
         this.listaDeProdutos = new HashMap<>();
     }
 
-    public String adicionaProduto(String nome, String descricao, String preco){
+    public boolean adicionaProduto(String nome, String descricao, double preco){
+        if(nome == null){
+            throw new NullPointerException("Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        }
+        if(descricao == null){
+            throw new NullPointerException("Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
+        }else if("".equals(descricao.trim())){
+            throw new IllegalArgumentException("Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
+        }
         DescritorProduto chave = new DescritorProduto(nome,descricao);
         if(this.listaDeProdutos.containsKey(chave)){
-            throw new IllegalArgumentException("Produto já existe");
+            throw new IllegalArgumentException("Erro no cadastro de produto: produto ja existe.");
         }else{
-            return "produto cadastrado";
+            this.listaDeProdutos.put(chave, new Produto(nome, descricao, preco));
+            return true;
         }
     }
+
+    public String exibeProduto(String nome, String descricao){
+        if(nome == null){
+            throw new NullPointerException("Erro na exibicao de produto: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na exibicao de produto: nome nao pode ser vazio ou nulo.");
+        }
+        if(descricao == null){
+            throw new NullPointerException("Erro na exibicao de produto: descricao nao pode ser vazia ou nula.");
+        }else if("".equals(descricao.trim())){
+            throw new IllegalArgumentException("Erro na exibicao de produto: descricao nao pode ser vazia ou nula.");
+        }
+
+        DescritorProduto chave = new DescritorProduto(nome,descricao);
+        if(this.listaDeProdutos.containsKey(chave)){
+            return this.listaDeProdutos.get(chave).toString();
+        }else{
+            throw new IllegalArgumentException("Erro na exibicao de produto: produto nao existe.");
+        }
+    }
+
+    public boolean editaProduto(String nome, String descricao, double novoPreco){
+        if(nome == null){
+            throw new NullPointerException("Erro na edicao de produto: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na edicao de produto: nome nao pode ser vazio ou nulo.");
+        }
+        if(descricao == null){
+            throw new NullPointerException("Erro na edicao de produto: descricao nao pode ser vazia ou nula.");
+        }else if("".equals(descricao.trim())){
+            throw new IllegalArgumentException("Erro na edicao de produto: descricao nao pode ser vazia ou nula.");
+        }
+        if(novoPreco < 0){
+            throw new NullPointerException("Erro na edicao de produto: preco invalido.");
+        }
+
+        DescritorProduto chave = new DescritorProduto(nome,descricao);
+        if(this.listaDeProdutos.containsKey(chave)){
+            this.listaDeProdutos.get(chave).setPreco(novoPreco);
+            return true;
+        }else{
+            throw new IllegalArgumentException("Erro na edicao de produto: produto nao existe.");
+        }
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
