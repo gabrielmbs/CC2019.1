@@ -132,7 +132,7 @@ public class CrudDeFornecedores {
     public String exibeProdutosDosFornecedores(){
         ArrayList<String> todosOsProdutos = new ArrayList();
         for (Fornecedor fornecedor : this.mapaNomeFornecedor.values()) {
-            todosOsProdutos.add(fornecedor.exibeTodosProdutos());
+            todosOsProdutos.add(fornecedor.exibeTodosProdutoDeUmFornecedor());
         }
         String imprimir = String.join(" | ", todosOsProdutos);
         return imprimir;

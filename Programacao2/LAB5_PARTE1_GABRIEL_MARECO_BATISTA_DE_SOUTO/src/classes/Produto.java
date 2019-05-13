@@ -19,7 +19,7 @@ public class Produto {
             throw new IllegalArgumentException("Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
         }
         if(preco < 0){
-            throw new NullPointerException("Erro no cadastro de produto: preco invalido.");
+            throw new IllegalArgumentException("Erro no cadastro de produto: preco invalido.");
         }
         this.nome = nome;
         this.descricao = descricao;

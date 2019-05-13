@@ -38,15 +38,62 @@ public class Cliente {
     }
 
     public void setNome(String nome) {
+        if(nome == null){
+            throw new NullPointerException("Erro na edicao do cliente: nome nao pode ser vazio ou nulo.");
+        }else if("".equals(nome.trim())){
+            throw new IllegalArgumentException("Erro na edicao do cliente: nome nao pode ser vazio ou nulo.");
+        }
         this.nome = nome;
     }
 
     public void setEmail(String email) {
+        if(email == null){
+            throw new NullPointerException("Erro na edicao do cliente: email nao pode ser vazio ou nulo.");
+        }else if("".equals(email.trim())){
+            throw new IllegalArgumentException("Erro na edicao do cliente: email nao pode ser vazio ou nulo.");
+        }
         this.email = email;
     }
 
     public void setLocalizacao(String localizacao) {
+        if(localizacao == null){
+            throw new NullPointerException("Erro na edicao do cliente: localizacao nao pode ser vazia ou nula.");
+        }else if("".equals(localizacao.trim())){
+            throw new IllegalArgumentException("Erro na edicao do cliente: localizacao nao pode ser vazia ou nula.");
+        }
         this.localizacao = localizacao;
+    }
+
+    /**
+     * Utilizado apenas nos testes
+     * @return
+     */
+    public String getNome() {
+        return nome;
+    }
+
+    /**
+     * Utilizado apenas nos testes
+     * @return
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * Utilizado apenas nos testes
+     * @return
+     */
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    /**
+     * Utilizado apenas nos testes
+     * @return
+     */
+    public String getCpf() {
+        return cpf;
     }
 
     @Override

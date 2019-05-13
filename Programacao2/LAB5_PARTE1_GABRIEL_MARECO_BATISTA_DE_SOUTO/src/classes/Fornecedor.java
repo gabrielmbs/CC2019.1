@@ -76,10 +76,10 @@ public class Fornecedor {
         }
     }
 
-    public String exibeTodosProdutos() {
+    public String exibeTodosProdutoDeUmFornecedor() {
         ArrayList<String> todosOsProdutos = new ArrayList();
         for (Produto produto : this.listaDeProdutos.values()) {
-            todosOsProdutos.add(produto.toString());
+            todosOsProdutos.add(this.nome + " - " + produto.toString());
         }
         String imprimir = String.join(" | ", todosOsProdutos);
         return imprimir;
@@ -111,11 +111,53 @@ public class Fornecedor {
 
 
     public void setEmail(String email) {
+        if(email == null){
+            throw new NullPointerException("Erro na edicao do fornecedor: email nao pode ser vazio ou nulo.");
+        }else if("".equals(email.trim())){
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: email nao pode ser vazio ou nulo.");
+        }
         this.email = email;
     }
 
     public void setTelefone(String telefone) {
+        if(telefone == null){
+            throw new NullPointerException("Erro na edicao do fornecedor: telefone nao pode ser vazio ou nulo.");
+        }else if("".equals(telefone.trim())){
+            throw new IllegalArgumentException("Erro na edicao do fornecedor: telefone nao pode ser vazio ou nulo.");
+        }
         this.telefone = telefone;
+    }
+
+    /**
+     * Utilizado apenas nos testes
+     * @return
+     */
+    public String getNome() {
+        return nome;
+    }
+
+    /**
+     * Utilizado apenas nos testes
+     * @return
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * Utilizados nos testes
+     * @return
+     */
+    public String getTelefone() {
+        return telefone;
+    }
+
+    /**
+     * Utilizado nos testes
+     * @return
+     */
+    public HashMap<DescritorProduto, Produto> getListaDeProdutos() {
+        return listaDeProdutos;
     }
 
     @Override
