@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90839ff3-3211-436e-8a05-cd6604fb334b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testes/classes_test/FornecedorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testes/controllers_test/CrudDeClientesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testes/controllers_test/CrudDeFornecedoresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/classes/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/classes/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/classes/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/classes/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeClientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeClientes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeFornecedores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeFornecedores.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/Fornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Fornecedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/CrudDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CrudDeClientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/classes_test/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testes/classes_test/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/classes_test/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testes/classes_test/ProdutoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="181" />
+    <option name="myElementSize" value="164" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -27,19 +32,123 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Cliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
+              <folding>
+                <element signature="e#3015#3016#0" expanded="true" />
+                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#3140#3141#0" expanded="true" />
+                <element signature="e#3168#3169#0" expanded="true" />
+                <element signature="e#3272#3273#0" expanded="true" />
+                <element signature="e#3306#3307#0" expanded="true" />
+                <element signature="e#3402#3403#0" expanded="true" />
+                <element signature="e#3428#3429#0" expanded="true" />
+                <element signature="e#4704#4705#0" expanded="true" />
+                <element signature="e#4784#4785#0" expanded="true" />
+                <element signature="e#5419#5420#0" expanded="true" />
+                <element signature="e#5459#5460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Fornecedor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1193">
+              <caret line="268" column="85" selection-start-line="268" selection-start-column="85" selection-end-line="268" selection-end-column="85" />
+              <folding>
+                <element signature="e#5935#5936#0" expanded="true" />
+                <element signature="e#5962#5963#0" expanded="true" />
+                <element signature="e#6060#6061#0" expanded="true" />
+                <element signature="e#6088#6089#0" expanded="true" />
+                <element signature="e#6183#6184#0" expanded="true" />
+                <element signature="e#6214#6215#0" expanded="true" />
+                <element signature="e#6343#6344#0" expanded="true" />
+                <element signature="e#6381#6382#0" expanded="true" />
+                <element signature="e#6428#6429#0" expanded="true" />
+                <element signature="e#6505#6506#0" expanded="true" />
+                <element signature="e#6800#6801#0" expanded="true" />
+                <element signature="e#6841#6842#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/Produto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="182">
+              <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+              <folding>
+                <element signature="e#1729#1730#0" expanded="true" />
+                <element signature="e#1763#1764#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testes/classes_test/ProdutoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <entry file="file://$PROJECT_DIR$/src/diagrama.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="0.0" y="636.0">controllers.CrudDeFornecedores</node>
+                <node x="336.75000000000006" y="1002.0">controllers.Facade</node>
+                <node x="580.0" y="696.0">controllers.CrudDeClientes</node>
+                <node x="630.5" y="306.0">classes.Cliente</node>
+                <node x="74.0" y="246.0">classes.Fornecedor</node>
+                <node x="148.5" y="0.0">classes.Produto</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="controllers.Facade" target="controllers.CrudDeClientes">
+                  <point x="53.24999999999994" y="-242.0" />
+                  <point x="603.0" y="977.0" />
+                  <point x="679.5" y="977.0" />
+                  <point x="-99.5" y="98.0" />
+                </edge>
+                <edge source="controllers.Facade" target="controllers.CrudDeFornecedores">
+                  <point x="-53.25000000000006" y="-242.0" />
+                  <point x="496.5" y="977.0" />
+                  <point x="420.0" y="977.0" />
+                  <point x="140.0" y="158.0" />
+                </edge>
+                <edge source="controllers.CrudDeFornecedores" target="classes.Fornecedor">
+                  <point x="186.66666666666663" y="-158.0" />
+                  <point x="466.66666666666663" y="611.0" />
+                  <point x="417.33333333333337" y="611.0" />
+                  <point x="137.33333333333337" y="170.0" />
+                </edge>
+                <edge source="classes.Fornecedor" target="classes.Produto">
+                  <point x="-137.33333333333337" y="-170.0" />
+                  <point x="142.66666666666663" y="221.0" />
+                  <point x="192.33333333333337" y="221.0" />
+                  <point x="-87.66666666666663" y="98.0" />
+                </edge>
+                <edge source="controllers.CrudDeClientes" target="classes.Cliente">
+                  <point x="-132.66666666666663" y="-98.0" />
+                  <point x="646.3333333333334" y="611.0" />
+                  <point x="680.0" y="611.0" />
+                  <point x="-99.0" y="110.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="433.0" y="447.49999999999994" />
+              <SelectedNodes>
+                <node>controllers.CrudDeFornecedores</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -70,17 +179,20 @@
         <option value="$PROJECT_DIR$/src/classes/Facade.java" />
         <option value="$PROJECT_DIR$/src/util/DescritorProduto.java" />
         <option value="$PROJECT_DIR$/src/controllers/Facade.java" />
-        <option value="$PROJECT_DIR$/src/classes/Cliente.java" />
         <option value="$PROJECT_DIR$/testes/classes_test/ClienteTest.java" />
-        <option value="$PROJECT_DIR$/src/classes/Produto.java" />
-        <option value="$PROJECT_DIR$/src/classes/Fornecedor.java" />
-        <option value="$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java" />
         <option value="$PROJECT_DIR$/testes/classes_test/FornecedorTest.java" />
         <option value="$PROJECT_DIR$/testes/classes_test/ProdutoTest.java" />
+        <option value="$PROJECT_DIR$/testes/controllers_test/CrudDeClientesTest.java" />
+        <option value="$PROJECT_DIR$/testes/controllers_test/CrudDeFornecedoresTest.java" />
+        <option value="$PROJECT_DIR$/src/controllers/CrudDeClientes.java" />
+        <option value="$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java" />
+        <option value="$PROJECT_DIR$/src/classes/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/classes/Fornecedor.java" />
+        <option value="$PROJECT_DIR$/src/classes/Produto.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="636" />
     <option name="y" value="27" />
     <option name="width" value="727" />
@@ -106,29 +218,6 @@
               <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="462c0819:PsiDirectoryNode" />
-              <item name="testes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="462c0819:PsiDirectoryNode" />
-              <item name="testes" type="462c0819:PsiDirectoryNode" />
-              <item name="classes_test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -146,7 +235,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557492431339" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Área de Trabalho/LAB05_ERIC_COPIA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -154,6 +243,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="controllers_test" />
       <recent name="classes_test" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -175,100 +265,90 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FornecedorTest">
-    <configuration name="FornecedorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Facade">
+    <configuration name="Facade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controllers.Facade" />
       <module name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes_test.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classes_test" />
-      <option name="MAIN_CLASS_NAME" value="classes_test.FornecedorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FornecedorTest.equalsTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudDeFornecedoresTest.editaFornecedorTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes_test.*" />
+          <option name="PATTERN" value="controllers_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classes_test" />
-      <option name="MAIN_CLASS_NAME" value="classes_test.FornecedorTest" />
-      <option name="METHOD_NAME" value="equalsTeste" />
+      <option name="PACKAGE_NAME" value="controllers_test" />
+      <option name="MAIN_CLASS_NAME" value="controllers_test.CrudDeFornecedoresTest" />
+      <option name="METHOD_NAME" value="editaFornecedorTeste" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FornecedorTest.hashCodeTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrudDeFornecedoresTest.removeProdutoTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes_test.*" />
+          <option name="PATTERN" value="controllers_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classes_test" />
-      <option name="MAIN_CLASS_NAME" value="classes_test.FornecedorTest" />
-      <option name="METHOD_NAME" value="hashCodeTeste" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FornecedorTest.removeProdutoTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="classes_test" />
-      <option name="MAIN_CLASS_NAME" value="classes_test.FornecedorTest" />
+      <option name="PACKAGE_NAME" value="controllers_test" />
+      <option name="MAIN_CLASS_NAME" value="controllers_test.CrudDeFornecedoresTest" />
       <option name="METHOD_NAME" value="removeProdutoTeste" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FornecedorTest.toStringTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrudDeFornecedoresTest.removerFornecedorTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes_test.*" />
+          <option name="PATTERN" value="controllers_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classes_test" />
-      <option name="MAIN_CLASS_NAME" value="classes_test.FornecedorTest" />
-      <option name="METHOD_NAME" value="toStringTeste" />
+      <option name="PACKAGE_NAME" value="controllers_test" />
+      <option name="MAIN_CLASS_NAME" value="controllers_test.CrudDeFornecedoresTest" />
+      <option name="METHOD_NAME" value="removerFornecedorTeste" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FornecedorTest.toStringTeste" />
-      <item itemvalue="JUnit.FornecedorTest.equalsTeste" />
-      <item itemvalue="JUnit.FornecedorTest.hashCodeTeste" />
-      <item itemvalue="JUnit.FornecedorTest.removeProdutoTeste" />
-      <item itemvalue="JUnit.FornecedorTest" />
+      <item itemvalue="Application.Facade" />
+      <item itemvalue="JUnit.CrudDeFornecedoresTest.removeProdutoTeste" />
+      <item itemvalue="JUnit.All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
+      <item itemvalue="JUnit.CrudDeFornecedoresTest.removerFornecedorTeste" />
+      <item itemvalue="JUnit.CrudDeFornecedoresTest.editaFornecedorTeste" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FornecedorTest" />
-        <item itemvalue="JUnit.FornecedorTest.removeProdutoTeste" />
-        <item itemvalue="JUnit.FornecedorTest.hashCodeTeste" />
-        <item itemvalue="JUnit.FornecedorTest.equalsTeste" />
-        <item itemvalue="JUnit.FornecedorTest.toStringTeste" />
+        <item itemvalue="Application.Facade" />
+        <item itemvalue="JUnit.All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
+        <item itemvalue="JUnit.CrudDeFornecedoresTest.editaFornecedorTeste" />
+        <item itemvalue="JUnit.CrudDeFornecedoresTest.removerFornecedorTeste" />
+        <item itemvalue="JUnit.CrudDeFornecedoresTest.removeProdutoTeste" />
       </list>
     </recent_temporary>
   </component>
@@ -285,50 +365,54 @@
       <workItem from="1556822654336" duration="18149000" />
       <workItem from="1557435301716" duration="10697000" />
       <workItem from="1557520398400" duration="3908000" />
-      <workItem from="1557621418206" duration="12893000" />
+      <workItem from="1557621418206" duration="13085000" />
+      <workItem from="1557772333683" duration="13154000" />
+      <workItem from="1557791096495" duration="158000" />
+      <workItem from="1557791979621" duration="2607000" />
+      <workItem from="1557794718238" duration="6328000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FornecedorTest_setEmailTesteParametroNulo - 2019.05.13 at 06h 07m 05s.xml">
-      <configuration name="FornecedorTest.setEmailTesteParametroNulo" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_editaProdutoTeste - 2019.05.13 at 19h 34m 10s.xml">
+      <configuration name="CrudDeFornecedoresTest.editaProdutoTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_setEmailTesteParametroVazio - 2019.05.13 at 06h 07m 57s.xml">
-      <configuration name="FornecedorTest.setEmailTesteParametroVazio" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_editaProdutoTeste - 2019.05.13 at 19h 38m 40s.xml">
+      <configuration name="CrudDeFornecedoresTest.editaProdutoTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_setTelefoneTeste - 2019.05.13 at 06h 10m 00s.xml">
-      <configuration name="FornecedorTest.setTelefoneTeste" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_removeProdutoTeste - 2019.05.13 at 19h 41m 38s.xml">
+      <configuration name="CrudDeFornecedoresTest.removeProdutoTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_setTelefoneTesteParametroNulo - 2019.05.13 at 06h 10m 12s.xml">
-      <configuration name="FornecedorTest.setTelefoneTesteParametroNulo" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_removeProdutoTeste - 2019.05.13 at 19h 45m 01s.xml">
+      <configuration name="CrudDeFornecedoresTest.removeProdutoTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_setTelefoneTesteParametroVazio - 2019.05.13 at 06h 10m 22s.xml">
-      <configuration name="FornecedorTest.setTelefoneTesteParametroVazio" configurationId="JUnit" />
+    <history-entry file="All_in_LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO - 2019.05.13 at 19h 45m 13s.xml">
+      <configuration name="All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_toStringTeste - 2019.05.13 at 06h 12m 38s.xml">
-      <configuration name="FornecedorTest.toStringTeste" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_removerFornecedorTeste - 2019.05.13 at 19h 46m 32s.xml">
+      <configuration name="CrudDeFornecedoresTest.removerFornecedorTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_equalsTeste - 2019.05.13 at 06h 16m 56s.xml">
-      <configuration name="FornecedorTest.equalsTeste" configurationId="JUnit" />
+    <history-entry file="All_in_LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO - 2019.05.13 at 19h 46m 49s.xml">
+      <configuration name="All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_hashCodeTeste - 2019.05.13 at 06h 17m 55s.xml">
-      <configuration name="FornecedorTest.hashCodeTeste" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_editaFornecedorTeste - 2019.05.13 at 19h 48m 48s.xml">
+      <configuration name="CrudDeFornecedoresTest.editaFornecedorTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_removeProdutoTeste - 2019.05.13 at 06h 20m 28s.xml">
-      <configuration name="FornecedorTest.removeProdutoTeste" configurationId="JUnit" />
+    <history-entry file="CrudDeFornecedoresTest_editaFornecedorTeste - 2019.05.13 at 19h 49m 37s.xml">
+      <configuration name="CrudDeFornecedoresTest.editaFornecedorTeste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest - 2019.05.13 at 06h 20m 47s.xml">
-      <configuration name="FornecedorTest" configurationId="JUnit" />
+    <history-entry file="All_in_LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO - 2019.05.13 at 19h 49m 48s.xml">
+      <configuration name="All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45647000" />
+    <option name="totallyTimeSpent" value="68086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="25" width="1317" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27852085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32336742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,7 +422,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32736155" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -348,7 +432,6 @@
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32736155" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -359,6 +442,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Maven" order="8" />
       <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3296617" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,52 +452,20 @@
     <SUITE FILE_PATH="coverage/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO$ClienteTest.ic" NAME="ClienteTest Coverage Results" MODIFIED="1557733195422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>classes_test.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO$CrudDeFornecedoresTest.ic" NAME="CrudDeFornecedoresTest Coverage Results" MODIFIED="1557783777228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers_test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO$All_in_LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO.ic" NAME="All in LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO Coverage Results" MODIFIED="1557787784190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SAGA.java" />
     <entry file="file://$PROJECT_DIR$/src/classes/SAGA.java" />
     <entry file="file://$PROJECT_DIR$/src/classes/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/classes/CrudDeProdutos.java" />
-    <entry file="file://$PROJECT_DIR$/src/controllers/CrudDeClientes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/DescritorProduto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/Facade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="84" column="74" selection-start-line="84" selection-start-column="74" selection-end-line="84" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-            <element signature="e#2483#2484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="134" column="76" selection-start-line="134" selection-start-column="76" selection-end-line="134" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -427,37 +479,275 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testes/classes_test/ProdutoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testes/controllers_test/CrudDeClientesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testes/classes_test/FornecedorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
+        <state relative-caret-position="2048">
           <caret line="163" column="120" selection-start-line="163" selection-start-column="120" selection-end-line="163" selection-end-column="120" />
           <folding>
             <element signature="e#293#294#0" expanded="true" />
             <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#5492#5493#0" expanded="true" />
-            <element signature="e#5522#5523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/controllers">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>controllers</OriginalElement>
+          <nodes>
+            <node x="" y="">controllers.CrudDeFornecedores</node>
+            <node x="" y="">controllers.CrudDeClientes</node>
+            <node x="" y="">controllers.Facade</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="86.0" y="84.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/classes">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>classes</OriginalElement>
+          <nodes>
+            <node x="" y="">classes.Cliente</node>
+            <node x="" y="">classes.Fornecedor</node>
+            <node x="" y="">classes.Produto</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="348.0" y="326.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">com</node>
+            <node x="" y="">classes_test</node>
+            <node x="" y="">images</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">easyaccept</node>
+            <node x="" y="">org</node>
+            <node x="" y="">classes</node>
+            <node x="" y="">toolbarButtonGraphics</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">java</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">util</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">controllers_test</node>
+            <node x="" y="">controllers</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">groovyjarjarantlr</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="259.0" y="262.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/Facade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="84" column="74" selection-start-line="84" selection-start-column="74" selection-end-line="84" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testes/controllers_test/CrudDeFornecedoresTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="89" column="108" selection-start-line="89" selection-start-column="108" selection-end-line="89" selection-end-column="108" />
+          <folding>
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="255" column="73" selection-start-line="255" selection-start-column="73" selection-end-line="255" selection-end-column="73" />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/CrudDeClientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="161" column="35" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
+          <folding>
+            <element signature="e#3015#3016#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3168#3169#0" expanded="true" />
+            <element signature="e#3272#3273#0" expanded="true" />
+            <element signature="e#3306#3307#0" expanded="true" />
+            <element signature="e#3402#3403#0" expanded="true" />
+            <element signature="e#3428#3429#0" expanded="true" />
+            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#4784#4785#0" expanded="true" />
+            <element signature="e#5419#5420#0" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Fornecedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        <state relative-caret-position="1193">
+          <caret line="268" column="85" selection-start-line="268" selection-start-column="85" selection-end-line="268" selection-end-column="85" />
+          <folding>
+            <element signature="e#5935#5936#0" expanded="true" />
+            <element signature="e#5962#5963#0" expanded="true" />
+            <element signature="e#6060#6061#0" expanded="true" />
+            <element signature="e#6088#6089#0" expanded="true" />
+            <element signature="e#6183#6184#0" expanded="true" />
+            <element signature="e#6214#6215#0" expanded="true" />
+            <element signature="e#6343#6344#0" expanded="true" />
+            <element signature="e#6381#6382#0" expanded="true" />
+            <element signature="e#6428#6429#0" expanded="true" />
+            <element signature="e#6505#6506#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6841#6842#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="182">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+          <folding>
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testes/classes_test/ProdutoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+    <entry file="file://$PROJECT_DIR$/src/diagrama.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="0.0" y="636.0">controllers.CrudDeFornecedores</node>
+            <node x="336.75000000000006" y="1002.0">controllers.Facade</node>
+            <node x="580.0" y="696.0">controllers.CrudDeClientes</node>
+            <node x="630.5" y="306.0">classes.Cliente</node>
+            <node x="74.0" y="246.0">classes.Fornecedor</node>
+            <node x="148.5" y="0.0">classes.Produto</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="controllers.Facade" target="controllers.CrudDeClientes">
+              <point x="53.24999999999994" y="-242.0" />
+              <point x="603.0" y="977.0" />
+              <point x="679.5" y="977.0" />
+              <point x="-99.5" y="98.0" />
+            </edge>
+            <edge source="controllers.Facade" target="controllers.CrudDeFornecedores">
+              <point x="-53.25000000000006" y="-242.0" />
+              <point x="496.5" y="977.0" />
+              <point x="420.0" y="977.0" />
+              <point x="140.0" y="158.0" />
+            </edge>
+            <edge source="controllers.CrudDeFornecedores" target="classes.Fornecedor">
+              <point x="186.66666666666663" y="-158.0" />
+              <point x="466.66666666666663" y="611.0" />
+              <point x="417.33333333333337" y="611.0" />
+              <point x="137.33333333333337" y="170.0" />
+            </edge>
+            <edge source="classes.Fornecedor" target="classes.Produto">
+              <point x="-137.33333333333337" y="-170.0" />
+              <point x="142.66666666666663" y="221.0" />
+              <point x="192.33333333333337" y="221.0" />
+              <point x="-87.66666666666663" y="98.0" />
+            </edge>
+            <edge source="controllers.CrudDeClientes" target="classes.Cliente">
+              <point x="-132.66666666666663" y="-98.0" />
+              <point x="646.3333333333334" y="611.0" />
+              <point x="680.0" y="611.0" />
+              <point x="-99.0" y="110.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="433.0" y="447.49999999999994" />
+          <SelectedNodes>
+            <node>controllers.CrudDeFornecedores</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

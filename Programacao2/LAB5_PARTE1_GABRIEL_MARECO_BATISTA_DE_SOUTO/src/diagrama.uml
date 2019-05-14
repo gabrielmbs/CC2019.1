@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="529.0">controllers.CrudDeFornecedores</node>
+    <node x="0.0" y="0.0">controllers.Facade</node>
+    <node x="0.0" y="890.0">controllers.CrudDeClientes</node>
+    <node x="605.0" y="529.0">classes.Cliente</node>
+    <node x="471.0" y="0.0">classes.Fornecedor</node>
+    <node x="443.0" y="890.0">classes.Produto</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="429.9999999999999" y="179.99999999999997" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
