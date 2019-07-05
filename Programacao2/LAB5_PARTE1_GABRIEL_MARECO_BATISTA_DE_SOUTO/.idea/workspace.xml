@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90839ff3-3211-436e-8a05-cd6604fb334b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testes/controllers_test/CrudDeClientesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/controllers_test/CrudDeFornecedoresTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/classes/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/classes/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeClientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeClientes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeFornecedores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO/controllers/CrudDeFornecedores.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Fornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Fornecedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CrudDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CrudDeClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CrudDeFornecedores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/classes_test/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testes/classes_test/ProdutoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +18,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LAB5_GABRIEL_MARECO.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,8 +75,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,6 +91,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,7 +106,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557492431339" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$USER_HOME$/LaboratoriosJAVA/LAB5_PARTE1_GABRIEL_MARECO_BATISTA_DE_SOUTO" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -247,6 +241,7 @@
       <workItem from="1557791096495" duration="158000" />
       <workItem from="1557791979621" duration="2607000" />
       <workItem from="1557794718238" duration="6956000" />
+      <workItem from="1557870534239" duration="127000" />
     </task>
     <servers />
   </component>
@@ -283,12 +278,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68714000" />
+    <option name="totallyTimeSpent" value="68841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="25" width="1317" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32336742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32887492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -513,9 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB5_GABRIEL_MARECO.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diagrama.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -531,7 +523,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="433.0" y="447.49999999999994" />
+          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="433.0" y="447.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -596,6 +588,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB5_GABRIEL_MARECO.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
